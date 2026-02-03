@@ -46,9 +46,19 @@ This application simulates a basic e-commerce flow where users can log in, brows
 
 ---
 
-## 🧱 App Architecture Overview
+## 📸 App Screenshots
 
-The project follows a clean and modular architecture with clear separation of responsibilities.
+| Login | Home |
+|------|------|
+| ![Login](https://github.com/user-attachments/assets/ec29b8cf-9aa9-4073-9190-55e91a0050ab) | ![Home](https://github.com/user-attachments/assets/6cd7256a-d3e4-46c4-a49c-59c71fb1185a) |
+
+| Product Detail | Cart |
+|---------------|------|
+| ![Product Detail](https://github.com/user-attachments/assets/bfa2d9cf-ebc0-4db9-8da1-8b98ba222a05) | ![Cart](https://github.com/user-attachments/assets/28d56bb8-b5fb-45b3-9ba5-c46df8ddefe3) |
+
+---
+
+## 🧱 App Architecture Overview
 
 ```text
 lib/
@@ -68,3 +78,28 @@ lib/
 │   └── cart/           # Cart screen
 ├── widgets/            # Reusable UI components
 └── main.dart           # App entry point
+
+## 🧠 State Management Approach
+
+- GetX is used for state management, navigation, and dependency injection
+- Each major feature has its own controller to handle business logic
+- UI widgets remain lightweight with no business logic inside them
+- Reactive UI updates are handled using `Obx`
+- Global states such as authentication, cart, and theme are managed using permanent controllers
+
+---
+
+## 🛠️ Flutter Version Used
+
+- **Flutter SDK**: `3.38.7`
+- **Dart SDK**: `3.10.7`
+
+---
+
+## ▶️ Setup & Run Instructions
+
+```bash
+git clone https://github.com/abhisheksinghaitd-ai/Product-Catalog-Application.git
+cd product_catalog
+flutter pub get
+flutter run
