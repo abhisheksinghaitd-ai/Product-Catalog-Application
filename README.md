@@ -46,23 +46,25 @@ This application simulates a basic e-commerce flow where users can log in, brows
 
 ---
 
-## 🧱 Architecture
+## 🧱 App Architecture Overview
+
+The project follows a clean and modular architecture with clear separation of responsibilities.
 
 ```text
 lib/
-├── controllers/
+├── controllers/        # GetX controllers (business logic & state)
 ├── core/
-│   ├── constants/
-│   ├── theme/
-│   └── utils/
+│   ├── constants/      # App strings, routes, constants
+│   ├── theme/          # Light/Dark theme configuration
+│   └── utils/          # Validators, snackbar helpers, utilities
 ├── data/
-│   ├── models/
-│   ├── repositories/
-│   └── services/
+│   ├── models/         # Strongly typed data models
+│   ├── repositories/   # Data abstraction layer
+│   └── services/       # API service layer
 ├── views/
-│   ├── auth/
-│   ├── home/
-│   ├── product/
-│   └── cart/
-├── widgets/
-└── main.dart
+│   ├── auth/           # Login screen
+│   ├── home/           # Product listing screen
+│   ├── product/        # Product detail screen
+│   └── cart/           # Cart screen
+├── widgets/            # Reusable UI components
+└── main.dart           # App entry point
