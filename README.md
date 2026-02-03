@@ -47,23 +47,26 @@ This application simulates a basic e-commerce flow where users can log in, brows
 ---
 
 ## 🧱 Architecture
+
+```text
 lib/
 ├── controllers/
 ├── core/
-│ ├── constants/
-│ ├── theme/
-│ └── utils/
+│   ├── constants/
+│   ├── theme/
+│   └── utils/
 ├── data/
-│ ├── models/
-│ ├── repositories/
-│ └── services/
+│   ├── models/
+│   ├── repositories/
+│   └── services/
 ├── views/
-│ ├── auth/
-│ ├── home/
-│ ├── product/
-│ └── cart/
+│   ├── auth/
+│   ├── home/
+│   ├── product/
+│   └── cart/
 ├── widgets/
 └── main.dart
+
 
 
 - **Controllers**: Business logic & state management (GetX)
