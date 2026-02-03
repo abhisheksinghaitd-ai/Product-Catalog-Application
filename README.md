@@ -54,7 +54,7 @@ This application simulates a basic e-commerce flow where users can log in, brows
 
 | Product Detail | Cart |
 |---------------|------|
-| ![Product Detail](https://github.com/user-attachments/assets/bfa2d9cf-ebc0-4db9-8da1-8b98ba222a05) | ![Cart](https://github.com/user-attachments/assets/28d56bb8-b5fb-45b3-9ba5-c46df8ddefe3) |
+| ![Cart](https://github.com/user-attachments/assets/bfa2d9cf-ebc0-4db9-8da1-8b98ba222a05) | ![Product Details](https://github.com/user-attachments/assets/28d56bb8-b5fb-45b3-9ba5-c46df8ddefe3) |
 
 ---
 
