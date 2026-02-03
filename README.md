@@ -1,2 +1,109 @@
-# Product-Catalog-Application
-A Flutter-based product catalog application demonstrating clean architecture, REST API integration, and state management using GetX. Features include mock authentication, product listing from Fake Store API, product search, detailed views, cart management, and light/dark theme support with responsive UI and proper state handling.
+# 🛒 Product Catalog Application
+
+A Flutter-based product catalog application built as part of a technical assessment. The project demonstrates clean architecture, REST API integration, proper state management using GetX, and real-world UI/UX handling including loading, error, empty states, and theme support.
+
+---
+
+## 📌 Project Overview
+
+This application simulates a basic e-commerce flow where users can log in, browse products fetched from a public API, view product details, add or remove items from a cart, manage quantities, and switch between light and dark themes. The app is designed with scalability, maintainability, and clean separation of concerns in mind.
+
+---
+
+## ✨ Features
+
+### 🔐 Authentication (Mock)
+- Email & password login
+- Input validation (email format, password length)
+- Mock authentication (no backend dependency)
+- Authentication state managed using GetX
+
+### 🏠 Home Screen – Product Listing
+- Fetches products from **Fake Store API**
+- Displays products in a responsive grid layout
+- Product cards include image, title, price, and category
+- Pull-to-refresh functionality
+- Product search by title
+- Handles loading, error, empty, and no-internet states gracefully
+
+### 📄 Product Detail Screen
+- Fetches product details using product ID
+- Displays large product image, full title, description, category, price, and rating
+- Add to Cart / Remove from Cart functionality
+- Real-time cart state updates
+
+### 🛒 Cart Screen
+- Displays all added products
+- Increase or decrease product quantity
+- Remove items from cart
+- Displays total cart value
+- Graceful empty cart state handling
+
+### 🌗 Theme Support
+- Light and Dark theme toggle
+- App-wide theme handling using GetX
+- UI adapts automatically across all screens
+
+---
+
+## 🧱 Architecture
+
+lib/
+├── controllers/
+├── core/
+│ ├── constants/
+│ ├── theme/
+│ └── utils/
+├── data/
+│ ├── models/
+│ ├── repositories/
+│ └── services/
+├── views/
+│ ├── auth/
+│ ├── home/
+│ ├── product/
+│ └── cart/
+├── widgets/
+└── main.dart
+
+
+- **Controllers**: Business logic & state management (GetX)
+- **Services**: API communication
+- **Repositories**: Data abstraction layer
+- **Models**: Strongly typed data models
+- **Views**: UI screens
+- **Widgets**: Reusable UI components
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: Flutter (latest stable)
+- **State Management**: GetX
+- **Networking**: HTTP
+- **API**: Fake Store API
+- **Image Caching**: cached_network_image
+- **Architecture**: Clean Architecture principles
+
+---
+
+## ▶️ Setup & Run Instructions
+
+1. Clone the repository
+```bash
+git clone https://github.com/your-username/flutter-product-catalog.git
+
+2. Navigate to project directory
+
+cd flutter-product-catalog
+
+3. Install dependencies
+
+flutter pub get
+
+4. Run the application
+
+flutter run
+
+The project follows a clean and modular architecture:
+
