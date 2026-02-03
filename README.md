@@ -81,7 +81,7 @@ lib/
 ├── widgets/            # Reusable UI components
 └── main.dart           # App entry point 
 
----
+```
 
 
 ## 🧠 State Management Approach
