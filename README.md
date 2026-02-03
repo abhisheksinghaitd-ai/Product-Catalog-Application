@@ -58,6 +58,8 @@ This application simulates a basic e-commerce flow where users can log in, brows
 
 ---
 
+
+
 ## 🧱 App Architecture Overview
 
 ```text
@@ -77,7 +79,10 @@ lib/
 │   ├── product/        # Product detail screen
 │   └── cart/           # Cart screen
 ├── widgets/            # Reusable UI components
-└── main.dart           # App entry point
+└── main.dart           # App entry point 
+
+---
+
 
 ## 🧠 State Management Approach
 
