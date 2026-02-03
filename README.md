@@ -47,7 +47,6 @@ This application simulates a basic e-commerce flow where users can log in, brows
 ---
 
 ## 🧱 Architecture
-
 lib/
 ├── controllers/
 ├── core/
